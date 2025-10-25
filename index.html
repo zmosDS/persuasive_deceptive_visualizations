@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Your Name – Project 2: Persuasive or Deceptive Visualization</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="script.js" defer></script>
+</head>
+
+<body>
+  <header>
+    <h1>Your Name</h1>
+    <nav>
+      <a href="#">Home</a>
+      <a href="#viz1">Visualization 1</a>
+      <a href="#viz2">Visualization 2</a>
+      <a href="#reflection">Reflection</a>
+      <a href="https://github.com/YOUR_USERNAME/portfolio" target="_blank">GitHub</a>
+    </nav>
+  </header>
+
+  <main>
+    <section id="intro">
+      <h2>Project 2: Persuasive or Deceptive Visualization</h2>
+      <p><strong>Proposition:</strong> Younger officers receive more complaints than older officers.</p>
+      <p>
+        This project explores how visualization design choices shape perception.  
+        Two opposing visualizations were created using NYPD complaint data:  
+        one persuasive and deceptive, and the other analytical and earnest.
+      </p>
+    </section>
+
+    <section id="viz1" class="viz-section">
+      <h2>Visualization 1 — “Complaints Surge Among Younger Officers”</h2>
+      <figure>
+        <img src="Anti_Young_Officer_Final.png" alt="Histogram showing higher complaint counts among younger officers">
+        <figcaption>
+          Red histogram emphasizing a surge in complaints among younger officers.
+        </figcaption>
+      </figure>
+
+      <h3>Design Intent</h3>
+      <p>
+        This visualization persuades viewers that younger officers receive most complaints.  
+        It relies on emotional framing, vivid color, and selective context to strengthen the argument.
+      </p>
+
+      <h3>Data Transformations</h3>
+      <ul>
+        <li>Grouped total complaints by officer age using raw counts.</li>
+        <li>Omitted normalization by officer count to amplify differences.</li>
+        <li>Filtered ages 20–55 for a focused distribution.</li>
+        <li>Binned ages in two-year intervals for smoother shape.</li>
+      </ul>
+
+      <h3>Key Design Decisions</h3>
+      <table>
+        <tr><th>Design Choice</th><th>Score (-2 to +2)</th><th>Rationale</th></tr>
+        <tr><td>Unnormalized counts</td><td>-2</td><td>Inflates apparent differences between age groups.</td></tr>
+        <tr><td>Truncated x-axis (20–55)</td><td>-1</td><td>Centers viewer on dramatic range of data.</td></tr>
+        <tr><td>Red sequential palette</td><td>-1.5</td><td>Associates youth with urgency or misconduct.</td></tr>
+        <tr><td>Loaded title language</td><td>-1.5</td><td>Encourages causal interpretation of age and complaints.</td></tr>
+        <tr><td>Peak annotation and colorbar</td><td>0</td><td>Improves readability without data distortion.</td></tr>
+      </table>
+
+      <p class="brief-rationale">
+        Though factually accurate, the design exaggerates differences through color and framing.  
+        It demonstrates how omission and rhetorical tone can mislead viewers without altering raw data.
+      </p>
+    </section>
+
+    <section id="viz2" class="viz-section">
+      <h2>Visualization 2 — “Complaint Rates Remain Steady Across Officer Ages”</h2>
+      <figure>
+        <img src="Pro_Young_Officer_Final_LabelBelow.png" alt="Line chart showing steady complaint rates across ages">
+        <figcaption>
+          Normalized line chart illustrating consistent complaint rates when adjusted for officer population.
+        </figcaption>
+      </figure>
+
+      <h3>Design Intent</h3>
+      <p>
+        This visualization offers a calm, normalized view showing that complaint rates  
+        remain steady across ages when adjusted for the number of officers.
+      </p>
+
+      <h3>Data Transformations</h3>
+      <ul>
+        <li>Grouped complaints and officer counts by age.</li>
+        <li>Calculated complaints per officer (<code>complaints ÷ officers</code>).</li>
+        <li>Applied rolling mean (window = 5) to smooth noise.</li>
+        <li>Restricted to ages 20–55 for consistent comparison.</li>
+        <li>Added ±1 standard deviation band to convey uncertainty.</li>
+      </ul>
+
+      <h3>Key Design Decisions</h3>
+      <table>
+        <tr><th>Design Choice</th><th>Score (-2 to +2)</th><th>Rationale</th></tr>
+        <tr><td>Normalization by officer count</td><td>+2</td><td>Reveals proportional complaint rates fairly.</td></tr>
+        <tr><td>Smoothed line (rolling mean)</td><td>+1.5</td><td>Clarifies overall trend and reduces noise.</td></tr>
+        <tr><td>Shaded variability band</td><td>+1</td><td>Shows uncertainty transparently.</td></tr>
+        <tr><td>Neutral blue palette</td><td>+1</td><td>Conveys calm, analytical tone.</td></tr>
+        <tr><td>Balanced y-axis (0.6–1.8)</td><td>+0.5</td><td>Visually stabilizes trend while staying truthful.</td></tr>
+        <tr><td>Explanatory average line and label</td><td>+1</td><td>Provides context for interpreting rates.</td></tr>
+      </table>
+
+      <p class="brief-rationale">
+        This chart mirrors the first but reframes the data ethically.  
+        Normalization and clear labeling promote transparency, encouraging interpretation rather than emotional reaction.
+      </p>
+    </section>
+
+    <section id="reflection">
+      <h2>Final Reflection</h2>
+      <p>
+        Building these opposing visualizations revealed how subtle design decisions can shift interpretation.  
+        The deceptive chart came together quickly through framing and color,  
+        while the earnest chart required more thoughtful transformation and clarity.
+      </p>
+      <p>
+        Visualization is never neutral. Small stylistic choices—titles, scales, colors—carry rhetorical weight.  
+        Persuasion becomes unethical when essential context is hidden or scale is distorted.  
+        Persuasive storytelling remains ethical when the audience can still infer the underlying truth.
+      </p>
+      <p>
+        Ethical visualization invites interpretation rather than dictates it.  
+        Both charts tell a story using the same data; the difference lies in whether the design clarifies or obscures that truth.
+      </p>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 Your Name | <a href="https://github.com/YOUR_USERNAME" target="_blank">GitHub</a></p>
+  </footer>
+</body>
+</html>
