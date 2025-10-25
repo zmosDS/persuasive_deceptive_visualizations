@@ -12,7 +12,6 @@
   <header>
     <h1>Zack Mosley</h1>
     <nav>
-      <a href="#">Home</a>
       <a href="#viz1">Visualization 1</a>
       <a href="#viz2">Visualization 2</a>
       <a href="#reflection">Reflection</a>
@@ -52,14 +51,16 @@
         <li>Omitted normalization by officer count to amplify differences.</li>
         <li>Filtered ages 20–55 for a focused distribution.</li>
         <li>Binned ages in two-year intervals for smoother shape.</li>
+        <li><em>Considered adding contextual information (e.g., number of officers per age group) but excluded it to maintain a cleaner, more impactful visual.</em></li>
+
       </ul>
 
       <h3>Key Design Decisions</h3>
       <table>
         <tr><th>Design Choice</th><th>Score (-2 to +2)</th><th>Rationale</th></tr>
-        <tr><td>Unnormalized counts</td><td>-2</td><td>Inflates apparent differences between age groups.</td></tr>
-        <tr><td>Truncated x-axis (20–55)</td><td>-1</td><td>Centers viewer on dramatic range of data.</td></tr>
-        <tr><td>Red sequential palette</td><td>-1.5</td><td>Associates youth with urgency or misconduct.</td></tr>
+        <tr><td>Unnormalized counts</td><td>-1</td><td>Inflates apparent differences between age groups.</td></tr>
+        <tr><td>Truncated x-axis (20–55)</td><td>-.5</td><td>Centers viewer on dramatic range of data.</td></tr>
+        <tr><td>Red sequential palette</td><td>-1</td><td>Associates youth with urgency or misconduct.</td></tr>
         <tr><td>Loaded title language</td><td>-1.5</td><td>Encourages causal interpretation of age and complaints.</td></tr>
         <tr><td>Peak annotation and colorbar</td><td>0</td><td>Improves readability without data distortion.</td></tr>
       </table>
@@ -88,10 +89,11 @@
       <h3>Data Transformations</h3>
       <ul>
         <li>Grouped complaints and officer counts by age.</li>
-        <li>Calculated complaints per officer (<code>complaints ÷ officers</code>).</li>
-        <li>Applied rolling mean (window = 5) to smooth noise.</li>
+        <li>Calculated complaints per officer (complaints ÷ officers).</li>
+        <li>Applied rolling mean to smooth noise.</li>
         <li>Restricted to ages 20–55 for consistent comparison.</li>
         <li>Added ±1 standard deviation band to convey uncertainty.</li>
+        <li><em>Considered including additional demographic variables (e.g., gender or ethnicity) but chose to isolate age to maintain a clear and interpretable comparison.</em></li>
       </ul>
 
       <h3>Key Design Decisions</h3>
@@ -100,7 +102,7 @@
         <tr><td>Normalization by officer count</td><td>+2</td><td>Reveals proportional complaint rates fairly.</td></tr>
         <tr><td>Smoothed line (rolling mean)</td><td>+1.5</td><td>Clarifies overall trend and reduces noise.</td></tr>
         <tr><td>Shaded variability band</td><td>+1</td><td>Shows uncertainty transparently.</td></tr>
-        <tr><td>Neutral blue palette</td><td>+1</td><td>Conveys calm, analytical tone.</td></tr>
+        <tr><td>Neutral blue palette</td><td>+.5</td><td>Conveys calm, analytical tone.</td></tr>
         <tr><td>Balanced y-axis (0.6–1.8)</td><td>+0.5</td><td>Visually stabilizes trend while staying truthful.</td></tr>
         <tr><td>Explanatory average line and label</td><td>+1</td><td>Provides context for interpreting rates.</td></tr>
       </table>
@@ -112,21 +114,25 @@
     </section>
 
     <section id="reflection">
-      <h2>Final Reflection</h2>
-      <p>
-        Building these opposing visualizations revealed how subtle design decisions can shift interpretation.  
-        The deceptive chart came together quickly through framing and color,  
-        while the earnest chart required more thoughtful transformation and clarity.
-      </p>
-      <p>
-        Visualization is never neutral. Small stylistic choices—titles, scales, colors—carry rhetorical weight.  
-        Persuasion becomes unethical when essential context is hidden or scale is distorted.  
-        Persuasive storytelling remains ethical when the audience can still infer the underlying truth.
-      </p>
-      <p>
-        Ethical visualization invites interpretation rather than dictates it.  
-        Both charts tell a story using the same data; the difference lies in whether the design clarifies or obscures that truth.
-      </p>
+    <h2>Final Reflection</h2>
+    <p>
+        Building these opposing visualizations of NYPD complaint data revealed how subtle design choices can dramatically shape interpretation.  
+        The first visualization came together quickly. Color, framing, and simple counts were enough to create a strong, emotionally persuasive narrative.  
+        The second took more deliberate work to normalize, label, and present fairly. That contrast showed me how much effort honest visualization really requires.
+    </p>
+    <p>
+        I realized that ethical deception does not always come from manipulation. Sometimes it comes from how easy it is to stop at the surface.  
+        My first chart never lied; it used accurate counts. But by excluding population context, it told a story that felt complete to most viewers.  
+        Even a curious reader could accept it as truth without realizing how normalization would change the message.  
+        It takes an informed, analytical mindset to notice what is not shown.  
+        That insight reshaped my understanding of visualization ethics. A chart can be technically honest yet ethically incomplete.
+    </p>
+    <p>
+        This project taught me that persuasion and ethics are separated not by data accuracy, but by intent and transparency.  
+        Ethical visualization does not avoid narrative; it acknowledges it openly and gives viewers the context they need to interpret responsibly.  
+        Both of my charts tell a story drawn from the same data. The difference lies in whether they invite reflection or reinforce assumption.  
+        The line between persuasion and deception is not fixed, but the responsibility to keep it visible belongs to the designer.
+    </p>
     </section>
   </main>
 
