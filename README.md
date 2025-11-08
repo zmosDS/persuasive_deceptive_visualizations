@@ -1,37 +1,32 @@
-# Personal Portfolio Website
+# Persuasive vs. Deceptive Visualization
 
-A web portfolio showcasing selected projects, coursework, and experience in web development and data visualization.  
-**Live site:** [View Portfolio](https://zmosds.github.io/portfolio/)
+Two opposing visualizations built from the same dataset to demonstrate how design choices can influence interpretation.  
+**Live demo:** [View the Project](https://example.github.io/project-2/)
 
-## Highlights
-- Fully client-side website built without frameworks
-- Interactive visualizations using D3.js
-- Custom styling + theming (no templates or site builders)
-- Includes meta-analysis page that visualizes its own codebase
+## Goal
+The goal of this project is to show how visual design, framing, and data transformation can be used to either support or undermine a proposition — even when both visualizations are based on the same underlying data.
 
-## Tech Stack
+## Built With
 - HTML, CSS, JavaScript
-- D3.js 
-- Node.js + npm 
+- Observable Plot
 - GitHub Pages
 
-## Structure
+## Features
+- Two contrasting visualizations built from a single dataset  
+- Selective data filtering, framing, and visual encoding to shape narrative  
+- Side-by-side persuasive and deceptive design choices  
+- Ethical reflection on visualization as rhetorical media  
+- Fully deployed as a standalone page within a portfolio site
+
+## Files
 ```
-PORTFOLIO/
-├── contact/
-├── images/
-├── lib/
-├── meta/
-├── projects/
-├── resume/
-├── global.js
-├── index.html
-├── index.js
-├── style.css
-└── .gitignore
+persuasive_or_deceptive/
+├── index.html # Main report with both visualizations and reflection
+├── style.css # Page styling
+├── script.js # Plot generation + interaction logic
+├── images/ # Exported visualization PNGs
+└── data/ # Source dataset and transformed CSV/JSON files
 ```
 
-## About
-Designed to serve as an evolving professional portfolio during and after graduate study.  
-Built and maintained by Zack Mosley — contact information is available on the site.
-
+## Data Source
+[ProPublica – Civilian Complaints Against New York City Police Officers](https://projects.propublica.org/datastore/#civilian-complaints-against-new-york-city-police-officers)
