@@ -7,9 +7,9 @@ Two opposing visualizations built from the same dataset to demonstrate how desig
 The goal of this project is to show how visual design, framing, and data transformation can be used to either support or undermine a proposition — even when both visualizations are based on the same underlying data.
 
 ## Built With
+- Python (Pandas, Matplotlib, Seaborn)
+- Jupyter Notebook
 - HTML, CSS, JavaScript
-- Observable Plot
-- GitHub Pages
 
 ## Features
 - Two contrasting visualizations built from a single dataset  
