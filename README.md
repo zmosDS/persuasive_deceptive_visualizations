@@ -1,7 +1,7 @@
 # Persuasive vs. Deceptive Visualization
 
 Two opposing visualizations built from the same dataset to demonstrate how design choices can influence interpretation.  
-**Live demo:** [View the Project](https://zmosds.github.io/persuasive_or_deceptive/)
+**Live demo:** [View Project](https://zmosds.github.io/persuasive_or_deceptive/)
 
 ## Goal
 The goal of this project is to show how visual design, framing, and data transformation can be used to either support or undermine a proposition — even when both visualizations are based on the same underlying data.
