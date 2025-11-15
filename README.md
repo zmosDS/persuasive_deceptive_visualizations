@@ -21,11 +21,11 @@ The goal of this project is to show how visual design, framing, and data transfo
 ## Files
 ```
 persuasive_or_deceptive/
-├── index.html # Main report with both visualizations and reflection
-├── style.css # Page styling
-├── script.js # Plot generation + interaction logic
-├── images/ # Exported visualization PNGs
-└── data/ # Source dataset and transformed CSV/JSON files
+├── index.html            # Main report with both visualizations and reflection
+├── style.css             # Page styling
+├── script.js             # Plot generation + interaction logic
+├── images/               # Exported visualization PNGs
+└── data/                 # Source dataset and transformed CSV/JSON files
 ```
 
 ## Data Source
